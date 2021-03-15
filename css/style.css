@@ -1,0 +1,47 @@
+*{
+ margin: 0;
+ 
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+p {
+  word-spacing: 5px;
+  padding: 25px 70px 40px;
+  text-align: center;
+  font-size: larger;
+}
+header { 
+  background:#3e4444;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+  
+}
+a:hover {
+  color: #FF0000;
+  border: black;
+}
+main {
+  color:#fff;
+ background:#405d27;
+ height: 500px;
+}
+footer{
+  background:#3e4444;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+  padding: auto;
+}
+#thankStatment {
+  text-align: center;
+}
