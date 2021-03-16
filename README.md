@@ -8,4 +8,4 @@ I build a web page to interact with the user using a guessing game.
 
 ## Links and Resources
 
-* [](./index.html)
+* [Guessing Game](./index.html)
