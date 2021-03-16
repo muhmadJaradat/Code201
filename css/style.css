@@ -18,6 +18,7 @@ header {
   margin: 0;
   text-align: center;
   padding: 20px;
+  border-bottom: black solid;
   
 }
 a {
@@ -31,17 +32,82 @@ a:hover {
   border: black;
 }
 main {
-  color:#fff;
- background:#405d27;
- height: 500px;
+  height:700px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center ;
+  }
+  100% {
+    background-position: left center;
+  }
+}
+ 
+
 footer{
   background:#3e4444;
   color: #fff;
   margin: 0;
   text-align: right;
   padding: auto;
+  height: auto;
 }
-#thankStatment {
-  text-align: center;
+.top10list {
+  
+  height: 300px;
+  width: 1000px;
+  color:  #fff;
+  text-align: center ;
+  overflow: scroll;
+  padding-top: 70px;
+  margin: 0 auto 0 auto;
+  
 }
+.bio {
+  height: 300px;
+  text-align: left ;
+  overflow: scroll;
+  width: 1000px; ;
+  margin: 0 auto 0 auto;
+  color: #fff;
+
+}
+.bio p {
+  padding: 10px;
+  
+  text-align:  justify ;
+  margin: inherit;
+}
+h2 {
+  font-size: 45px;
+  margin: 30px auto 10px 10px;
+  color: #3e4444
+}
+ul  li{
+list-style-type:square;
+padding-bottom: 25px;
+font-size: 25px;
+
+
+}
+::-webkit-scrollbar {
+  width: 0;  
+  background:transparent;  
+}
+ol  li{
+  list-style-type:decimal;
+  padding-bottom: 25px;
+  font-size: 25px;
+margin-left: 0 auto 0 auto;
+text-align: center;
+list-style-position: inside;
+}
+
+  
