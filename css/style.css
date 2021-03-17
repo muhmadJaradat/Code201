@@ -19,6 +19,7 @@ header {
   text-align: center;
   padding: 20px;
   border-bottom: black solid;
+  border-top:  black solid;
   
 }
 a {
@@ -58,6 +59,8 @@ footer{
   text-align: right;
   padding: auto;
   height: auto;
+  border-top: black solid;
+  border-bottom:  black solid;
 }
 .top10list {
   
