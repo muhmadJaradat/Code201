@@ -170,6 +170,7 @@ for (let i = 0; i<4; i++) {
 
   } if (i===3) {
     alert('Sorry, you are out of attempts');
+    alert('The correct year is 2015');
     //console.log('Sorry, you are out of attempts');
   }}
 let favFood= ['pizza','pasta','burger'];
