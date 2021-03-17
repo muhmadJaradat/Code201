@@ -141,7 +141,6 @@ else{
   }
 
 }
-function gyear(){
 let year=2015;
 
 
@@ -171,11 +170,8 @@ for (let i = 0; i<4; i++) {
 
   } if (i===3) {
     alert('Sorry, you are out of attempts');
-    alert('The correct year is 2015');
     //console.log('Sorry, you are out of attempts');
   }}
-}
-gyear();
 let favFood= ['pizza','pasta','burger'];
 for (let i = 6; i > 0; i--) {
   let guess=prompt('Can you guess any of my favorite meals? You have only '+i+' attempts left');
