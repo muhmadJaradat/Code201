@@ -192,6 +192,28 @@ gyear();
 
 function food() {
   let favFood= ['pizza','pasta','burger'];
+
+    i=4;
+    break;
+  case (guessedYear<2011):
+    alert('You are too low, try again');
+    //console.log('You are too low, try again');
+    break;
+  case (guessedYear>2018):
+    alert('You are too high, try again');
+    //console.log('You are too high, try again');
+    break;
+  default:
+    alert('You are so close, try again');
+    //console.log('You are so close, try again');
+    break;
+
+  } if (i===3) {
+    alert('Sorry, you are out of attempts');
+    //console.log('Sorry, you are out of attempts');
+  }}
+let favFood= ['pizza','pasta','burger'];
+
 for (let i = 6; i > 0; i--) {
   let guess=prompt('Can you guess any of my favorite meals? You have only '+i+' attempts left');
   if (guess===favFood[0]||guess===favFood[1]||guess===favFood[2]){
