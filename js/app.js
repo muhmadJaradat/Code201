@@ -1,11 +1,17 @@
 'use strict';
-let userName=prompt('Hello there ! my name is Mohammad, what is yours?');
+let score=0;
+
+function userName1()
+ {
+   let userName=prompt('Hello there ! my name is Mohammad, what is yours?');
 //console.log(userName);
 alert('Welcome '+userName);
+ }
 
-alert('So now guess who am I by answering with yes or no to the following questions');
+ userName1();
+ function yesnoq() {alert('So now guess who am I by answering with yes or no to the following questions');
 let favorite= prompt('One of my favorite things to do is coding!');
-let score=0;
+
 if(favorite.toLowerCase()==='yes' || favorite.toLowerCase()=== 'y')
 {
   //console.log('You are right! I love coding');
@@ -35,9 +41,7 @@ else{
     alert('Of course not! I love coding');
 
   }
-}
-
-let education=prompt('My previous education is related to programming');
+}let education=prompt('My previous education is related to programming');
 if (education.toLowerCase()==='yes' || education.toLowerCase()=== 'y') {
   //console.log('No,unfortunately, I studied chemical engineering');
   alert('No,unfortunately, I studied chemical engineering');
@@ -139,41 +143,55 @@ else{
     alert('True, it is one of my favorite colors but my most favorite one is black');
     score++;
   }
+}
+
+
+
+
+
 
 }
-let year=2015;
+yesnoq();
+
+function gyear () {
+  let year=2015;
 
 
-for (let i = 0; i<4; i++) {
-  let guessedYear=prompt('in which year I finish my High School? "Choose a year between 2005-2021."');
-  switch (true) {
+  for (let i = 0; i<4; i++) {
+    let guessedYear=prompt('in which year I finish my High School? "Choose a year between 2005-2021."');
+    switch (true) {
+  
+    case (Number(guessedYear)===year):
+      //console.log('You are right !');
+      alert('You are right !');
+      score++;
+  
+      i=4;
+      break;
+    case (guessedYear<2011):
+      alert('You are too low, try again');
+      //console.log('You are too low, try again');
+      break;
+    case (guessedYear>2018):
+      alert('You are too high, try again');
+      //console.log('You are too high, try again');
+      break;
+    default:
+      alert('You are so close, try again');
+      //console.log('You are so close, try again');
+      break;
+  
+    } if (i===3) {
+      alert('Sorry, you are out of attempts');
+      alert('The correct year is 2015');
+      //console.log('Sorry, you are out of attempts');
+    }}
+}
+gyear();
 
-  case (Number(guessedYear)===year):
-    //console.log('You are right !');
-    alert('You are right !');
-    score++;
 
-    i=4;
-    break;
-  case (guessedYear<2011):
-    alert('You are too low, try again');
-    //console.log('You are too low, try again');
-    break;
-  case (guessedYear>2018):
-    alert('You are too high, try again');
-    //console.log('You are too high, try again');
-    break;
-  default:
-    alert('You are so close, try again');
-    //console.log('You are so close, try again');
-    break;
-
-  } if (i===3) {
-    alert('Sorry, you are out of attempts');
-    alert('The correct year is 2015');
-    //console.log('Sorry, you are out of attempts');
-  }}
-let favFood= ['pizza','pasta','burger'];
+function food() {
+  let favFood= ['pizza','pasta','burger'];
 for (let i = 6; i > 0; i--) {
   let guess=prompt('Can you guess any of my favorite meals? You have only '+i+' attempts left');
   if (guess===favFood[0]||guess===favFood[1]||guess===favFood[2]){
@@ -192,5 +210,15 @@ for (let i = 6; i > 0; i--) {
 
   }
 }
+}
+food();
+
+
 alert('Your final score is '+score+' out of 7');
 //console.log('Your final score is '+score+' out of 7');
+
+
+
+
+
+
